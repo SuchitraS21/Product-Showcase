@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer | Packages</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Travel Explorer</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="packages.html" class="active">Packages</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <h2>Our Travel Packages</h2>
+</section>
+
+<!-- Search Bar -->
+<div class="search-bar">
+  <input type="text" id="searchInput" placeholder="Search packages...">
+</div>
+
+<!-- Packages -->
+<section class="packages">
+  <div class="package-card">
+    <img src="images/paris.jpg" alt="Paris Package">
+    <div class="content">
+      <h3>Paris Delight</h3>
+      <p>5 Days / 4 Nights: Eiffel Tower, Louvre, Seine Cruise.</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+
+  <div class="package-card">
+    <img src="images/bali.jpg" alt="Bali Package">
+    <div class="content">
+      <h3>Bali Escape</h3>
+      <p>6 Days / 5 Nights: Beaches, Temples, Ubud, Waterfalls.</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+
+  <div class="package-card">
+    <img src="images/newyork.jpg" alt="New York Package">
+    <div class="content">
+      <h3>New York Adventure</h3>
+      <p>5 Days / 4 Nights: Times Square, Central Park, Broadway.</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+
+  <div class="package-card">
+    <img src="images/tokyo.jpg" alt="Tokyo Package">
+    <div class="content">
+      <h3>Tokyo Discovery</h3>
+      <p>6 Days / 5 Nights: Temples, Shibuya, Akihabara, Sushi.</p>
+      <button>Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Booking Modal -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Book Your Package</h2>
+    <form id="bookingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="package">Package:</label>
+      <input type="text" id="package" name="package" readonly>
+
+      <label for="days">Number of Days:</label>
+      <input type="number" id="days" name="days" required min="1">
+
+      <label for="people">Number of People:</label>
+      <input type="number" id="people" name="people" required min="1">
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Travel Explorer | Designed with ❤️</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
